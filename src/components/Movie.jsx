@@ -2,7 +2,7 @@ import React from 'react';
 
 const Movie = ({ movie, index }) => {
     const columnSpanClass = index === 0 
-        ? 'md:col-span-3 md:row-span-4 sm:col-span-2 sm:row-span-3'
+        ? 'md:col-span-4 md:row-span-4 sm:col-span-2 sm:row-span-3 l:col-span-3 lg:col-span-3'
         : index === 1 
         ? 'md:col-span-2 md:row-span-2 sm:col-span-2 sm:row-span-2' 
         : 'md:col-span-1 sm:col-span-1';

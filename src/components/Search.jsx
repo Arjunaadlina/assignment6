@@ -19,16 +19,16 @@ const Search = ({ onSearch }) => {
     };
 
     return (
-        <form onSubmit={handleSearch} className="flex items-center justify-center my-4">
+        <form onSubmit={handleSearch} className="flex flex-row items-center justify-center my-4 md:flex-row md:justify-center">
             <input
                 type="text"
                 value={query}
                 onChange={handleInputChange}
                 placeholder="Search for movies..."
-                className="px-4 py-2 rounded-l-lg focus:outline-none text-black"
+                className="w-full md:w-64 lg:w-98 px-4 py-2 rounded-tl-lg rounded-bl-lg md:rounded-bl-lg  md:rounded-tl-lg  focus:outline-none text-black"
             />
-            <button type="submit" className="bg-blue-600 px-4 py-2 rounded-r-lg text-white">
-                Search
+            <button type="submit" className="w-12 md:w-16 bg-blue-300 px-4 py-2 rounded-br-lg rounded-tr-lg md:rounded-tr-lg md:rounded-br-lg text-white ">
+                🔍  
             </button>
         </form>
     );
